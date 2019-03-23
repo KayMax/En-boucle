@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+}
+.sudoku-box{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+.sudoku{
+  float: left;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.sudoku-line:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.sudoku-item{
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+
+}
+.sudoku-item img{
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border: 1px solid #999;
+}
+.sudoku .sudoku-line:last-child .sudoku-item{
+  margin-bottom: 0;
+}
+.sudoku-line .sudoku-item:last-child{
+  margin-right: 0;
+}
